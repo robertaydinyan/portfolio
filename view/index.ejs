@@ -1,0 +1,18 @@
+<% if (page == 'home') {%>
+
+    <% include partials/HEAD.ejs %>
+    <% include partials/BODY.ejs %>
+    <%-partial('partials/home')%>
+
+    <% include partials/END.ejs %>
+<% } else { %>
+
+    <% include partials/HEAD.ejs %>
+
+    <link href="/css/404.css" rel="stylesheet">
+    <% include partials/BODY.ejs %>
+    <%-partial('partials/404')%>
+
+    <% include partials/END.ejs %>
+
+<% } %>
