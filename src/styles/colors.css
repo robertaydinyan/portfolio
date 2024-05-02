@@ -1,0 +1,14 @@
+:root {
+    --bg: #191c1c;
+    --heading: #fff;
+    --cm: #222525;
+    --cm-border: #2a2e2e;
+    --body-color: #8b9f9f;
+    --cm-primary: #56b887;
+    --cm-white: #fff;
+    --btn-border: #2a2e2e;
+    --circle-border: #2a2e2e;
+    --circle-bg: #2a2e2e;
+    --cm-transparent: transparent;
+    --transition: .4s ease;
+}
