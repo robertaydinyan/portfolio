@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
-import home_icon from '../images/icons/home.svg'
-import email_icon from '../images/icons/email.svg'
-import phone_icon from '../images/icons/phone.svg'
-import code_image from '../images/code.png'
-import ContentCircle from './ContentCircle'
+import home_icon from '../../images/icons/home.svg'
+import email_icon from '../../images/icons/email.svg'
+import phone_icon from '../../images/icons/phone.svg'
+import code_image from '../../images/code.png'
+import ContentCircle from '../layouts/ContentCircle'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';

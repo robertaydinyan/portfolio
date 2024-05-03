@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
-import ContentCircle from "./ContentCircle";
-import about_icon from "../images/icons/about.svg"
-import line_icon from "../images/icons/line.svg"
-import star_icon from "../images/icons/star.svg"
+import ContentCircle from "../layouts/ContentCircle";
+import about_icon from "../../images/icons/about.svg"
+import line_icon from "../../images/icons/line.svg"
+import star_icon from "../../images/icons/star.svg"
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';

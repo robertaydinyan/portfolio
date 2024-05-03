@@ -1,4 +1,4 @@
-import icon from "../images/icons/icon.png";
+import icon from "../../images/icons/icon.png";
 import React from "react";
 
 export default function ContentCircle() {

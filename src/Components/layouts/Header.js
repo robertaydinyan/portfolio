@@ -1,9 +1,9 @@
 import React from 'react';
-import profile_picture from '../images/profile_picture.jpeg';
-import github_icon from '../images/icons/github.svg'
-import instagram_icon from '../images/icons/instagram.svg'
-import facebook_icon from '../images/icons/facebook.svg'
-import linkedin_icon from '../images/icons/linkedin.svg'
+import profile_picture from '../../images/profile_picture.jpeg';
+import github_icon from '../../images/icons/github.svg'
+import instagram_icon from '../../images/icons/instagram.svg'
+import facebook_icon from '../../images/icons/facebook.svg'
+import linkedin_icon from '../../images/icons/linkedin.svg'
 
 export default function Header() {
     return (
