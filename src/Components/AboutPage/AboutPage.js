@@ -25,17 +25,20 @@ export default function AboutPage() {
                             <p>Me! About</p>
                         </div>
                         <h1 className="main-title" data-aos="fade-up" data-aos-duration="1500">
-                            Hire the best Portfolio Freelancers in <span>Jeckob Martin</span>
+                            Hire a Top Full Stack Web & Mobile Developer <span>Robert Aydinyan</span>
                             <u className="inline">
                                 <img alt="image" src={line_icon} />
                             </u>
-                            in Los Angeles.
+                            in Yerevan.
                         </h1>
                     </div>
                     <div className="about-brief">
                         <div className="about-left">
-                            <p>There are many variations of passages of Lorem Ipsum available,
-                            but majority have suffered alteration in some form, by injected humour.</p>
+                            <h3>Me!</h3>
+                            <p>As a seasoned Full Stack Web and Mobile Developer based in Yerevan, 
+                                I specialize in delivering high-quality digital products 
+                                tailored to your needs. With over a decade of experience in the tech industry,
+                                 my work focuses on creating sleek, efficient, and user-centric solutions.</p>
 
                             <div className="rating">
                                 <div className="star-icon">
@@ -43,29 +46,29 @@ export default function AboutPage() {
                                 </div>
                                 <div className="rating-count">
                                     <h4>5 Star</h4>
-                                    <p>Read Our <a href="#">Success Story's</a></p>
+                                    <p>Read Our <a href="#"><span>Success Story's</span></a></p>
                                 </div>
                             </div>
                         </div>
                         <div className="about-right">
-                            <p>Randomised words which don't look even slightly belie vable. If
-                            you are going to use a passage of Lorem Ipsu you need to be sure there isn't anything embarr
-                            assing hidden in the middle of text All the Lorem Ipsum.</p>
+                            <h3>Commitment to Excellence</h3>
+                            <p>My portfolio boasts a range of projects that demonstrate my expertise in developing
+                                 scalable web and mobile applications. Each project underscores my commitment
+                                 to quality and the innovative use of technology to achieve the best outcomes..</p>
 
-                            <p className="margin">Generators
-                            on the Internet tend to repeat predefined chunks as necessary, making this the first true
-                            generator on the Internet. Lorem Ipsu you need to be sure there isn't anything embarr.</p>
+                            <p className="margin">Explore this site to understand the scope of my services, read client testimonials,
+                             and view detailed case studies of my work. Let's connect and discuss how I can bring your project to life 
+                             with professionalism and precision.</p>
                         </div>
                     </div>
                     <div className="about-inf">
                         <div className="about-info-content">
-                            <div className="about-info"><h6 className="name">Name</h6><p>Donald L. Juarez</p></div>
-                            <div className="about-info"><h6 className="name">Phone</h6><p><a href="tel:+99 (555) 666 88 55">+99
-                                (555) 666 88 55</a></p></div>
+                            <div className="about-info"><h6 className="name">Name</h6><p>Robert Aydinyan</p></div>
+                            <div className="about-info"><h6 className="name">Phone</h6><p><a href="tel:+374 (33) 230 250">+374 (33) 230 250</a></p></div>
                         </div>
                         <div className="about-info-content">
-                            <div className="about-info"><h6 className="name">Office</h6><p>1247/Plot No. 39, New York.</p></div>
-                            <div className="about-info"><h6 className="name">Experience</h6><p>12 Years</p></div>
+                            <div className="about-info"><h6 className="name">Location</h6><p>Armenia, Yerevan</p></div>
+                            <div className="about-info"><h6 className="name">Experience</h6><p>6+ Years</p></div>
                         </div>
                     </div>
             {/*        <div className="about-client">*/}

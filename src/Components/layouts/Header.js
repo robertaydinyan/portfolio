@@ -15,7 +15,7 @@ export default function Header() {
 
                 <div className="author-info">
                     <h3 className="author-name">Robert Aydinyan</h3>
-                    <span className="author-designation">Designer &amp; Developer</span>
+                    <span className="author-designation">Full Stack Web &amp; Mobile Developer</span>
                 </div>
 
                 <div className="author-hiring">
@@ -24,7 +24,8 @@ export default function Header() {
                 </div>
 
                 <div className="author-description">
-                    <p>Specializing in strategy, improving design maturity &amp; design systems.</p>
+                    <p>Specializing in creating robust digital solutions tailored to your business needs </p>
+                    <p> Let’s collaborate to bring your vision to life!</p>
                 </div>
                 
                 <div className="author-social-links">

@@ -27,20 +27,20 @@ export default function HomePage() {
                     </div>
 
                     <h1 className="main-title" data-aos="fade-up" data-aos-duration="1500">
-                        I'm making product and <span>design</span> minimal modern.
+                        I'm building Minimalistic and User-Centric <span>Web & Mobile</span> Solutions.
                     </h1>
                     <div className="contact-zone">
                         <a href="mailto:hi@infoexample.com">
                             <span>
                                 <img alt="email" src={email_icon}/>
                             </span>
-                            hi@infoexample.com
+                            arserv@gmail.com
                         </a>
                         <a href="callto:+8801712345678">
                             <span>
                                 <img alt="email" src={phone_icon}/>
                             </span>
-                            +8801712345678
+                            +374 33 230 250
                         </a>
                     </div>
                     <div className="content-img">

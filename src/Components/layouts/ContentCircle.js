@@ -9,7 +9,7 @@ export default function ContentCircle() {
                     <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"></path>
                 </defs>
                 <text>
-                    <textPath xlinkHref="#circle">Robert Web Development
+                    <textPath xlinkHref="#circle">AR Web & Mobile Development
                     </textPath>
                 </text>
             </svg>

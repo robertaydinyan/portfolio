@@ -27,9 +27,7 @@ export default function PortfolioPage() {
                             <p>Best Our Portfolio</p>
                         </div>
                         <h1 className="main-title" data-aos="fade-up" data-aos-duration="1500">
-                            Jeckob Martin the best
-                            <br/>
-                            make Our 
+                            Check out my
                             <span> Portfolio </span>
                             <u>
                                 <img alt="image" loading="lazy" src={line_icon}/>
