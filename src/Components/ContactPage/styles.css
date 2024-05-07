@@ -1,0 +1,86 @@
+.contact-area {
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.contact-area .contact-method__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+    gap: 25px;
+}
+
+.contact-area .contact-method__content .single-contact-item {
+    min-width: 275px;
+    max-width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color-2);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.contact-area .contact-method__content .single-contact-item__top {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-area .contact-method__content .single-contact-item__top .text {
+    text-align: right;
+}
+
+.contact-area .contact-method__content .single-contact-item:hover {
+    border-color: var(--cm-primary);
+}
+
+.contact-area .contact-form .section-title {
+    font-weight: 400;
+    color: var(--body-color);
+    margin-bottom: 40px;
+}
+
+.contact-area .contact-form__content .form .single-input {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.contact-area .contact-form__content .form .single-input__item {
+    width: 50%;
+}
+
+.contact-area .contact-form__content .form .single-input__item label span {
+    color: var(--cm-primary);
+}
+
+.contact-area .contact-form__content .form .single-input__item label {
+    display: block;
+    font-size: 14px;
+    color: var(--cm-white);
+    margin-bottom: 5px;
+}
+
+.contact-area .contact-form__content .form .single-input__item input, .contact-area .contact-form__content .form .single-input__item textarea {
+    border: 0;
+    border-bottom: 1px solid var(--border-color-2);
+    padding: 0;
+    height: 30px;
+    background-color: transparent;
+    transition: var(--transition);
+    color: var(--cm-white);
+    background: var(--cm);
+}
+
+.contact-area .contact-form__content .form .single-input__item input:focus, .contact-area .contact-form__content .form .single-input__item textarea:focus {
+    border-color: var(--cm-primary);
+}
+
+.contact-area .contact-form__content .form .single-input__item.w-full textarea {
+    min-height: 100px;
+    resize: none;
+    padding: 15px 0;
+    width: 100% !important;
+}

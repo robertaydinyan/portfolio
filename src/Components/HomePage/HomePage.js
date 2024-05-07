@@ -30,13 +30,13 @@ export default function HomePage() {
                         I'm building Minimalistic and User-Centric <span>Web & Mobile</span> Solutions.
                     </h1>
                     <div className="contact-zone">
-                        <a href="mailto:hi@infoexample.com">
+                        <a href="mailto:robert.aydinyan2002@gmail.com">
                             <span>
                                 <img alt="email" src={email_icon}/>
                             </span>
-                            arserv@gmail.com
+                            robertrobert
                         </a>
-                        <a href="callto:+8801712345678">
+                        <a href="callto:+37433230250">
                             <span>
                                 <img alt="email" src={phone_icon}/>
                             </span>

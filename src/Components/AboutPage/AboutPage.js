@@ -25,11 +25,11 @@ export default function AboutPage() {
                             <p>Me! About</p>
                         </div>
                         <h1 className="main-title" data-aos="fade-up" data-aos-duration="1500">
-                            Hire a Top Full Stack Web & Mobile Developer <span>Robert Aydinyan</span>
+                            Hire a Top Full Stack Web & Mobile Developer <span> Robert Aydinyan </span>
                             <u className="inline">
                                 <img alt="image" src={line_icon} />
                             </u>
-                            in Yerevan.
+                             in Yerevan.
                         </h1>
                     </div>
                     <div className="about-brief">
