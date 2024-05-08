@@ -20,7 +20,7 @@ export default function Sidebar({isOpen, onClose}) {
 
     return (
         <div className="offcanvase" ref={sidebarRef}>
-            <div className="menu-overlay" onclose></div>
+            <div className="menu-overlay" onClick={onClose}></div>
             <div className="menu-inner">
                 <div className="close-icon" onClick={onClose}>
                     <img alt="image" width="16" height="16" src={x_lg_icon}/>

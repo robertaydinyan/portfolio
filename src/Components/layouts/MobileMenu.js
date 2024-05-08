@@ -19,7 +19,7 @@ export default function MobileMenu({openSidebar}) {
                     {/*    </ul>*/}
                     {/*</div>*/}
                 </div>
-                <div className="functionality cm-right" onclose={openSidebar}>
+                <div className="functionality cm-right" onClose={openSidebar}>
                     <div className="">
                         <img alt="menu-bar" className="svg" src={bars_icon} onClick={openSidebar}/>
                     </div>

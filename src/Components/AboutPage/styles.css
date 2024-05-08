@@ -1,0 +1,72 @@
+.single-info-item h3 {
+    font-weight: 400;
+    color: var(--body-color);
+    margin-bottom: 40px;
+    display: block;
+    margin-top: 20px;
+}
+
+.education-education .skill-container {
+    display: flex;
+    gap: 30px;
+}
+
+.single-skill-item {
+    width: 50%;
+}
+
+.single-skill-item .expertise__single:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.single-skill-item .expertise__title {
+    font-weight: 700;
+    font-family: var(--heading);
+    color: var(--heading);
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-size: 20px;
+
+}
+
+
+.skill-container{
+    display: flex;
+    gap: 30px;
+}
+
+
+.single-skill-item .progress {
+    position: relative;
+    border-radius: 0;
+}
+
+.single-skill-item .progress:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 100%;
+    background: var(--progress);
+}
+
+.single-skill-item .progress .progress-bar {
+    height: 5px;
+    border-radius: 0;
+    background: var(--cm-primary);
+    z-index: 9;
+    position: relative;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: var(--bs-progress-bar-color);
+    text-align: center;
+    white-space: nowrap;
+    background-color: var(--bs-progress-bar-bg);
+    transition: var(--bs-progress-bar-transition);
+}
