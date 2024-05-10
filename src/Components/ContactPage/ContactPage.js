@@ -1,9 +1,7 @@
 import React, {useEffect} from 'react';
 import ContentCircle from "../layouts/ContentCircle";
-import contact_icon from '../../images/icons/contact.svg'
-import line_icon from '../../images/icons/line.svg'
-import phone_icon from '../../images/icons/phone-call.svg'
-import mail_icon from '../../images/icons/mail-open.svg'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 import './styles.css'
 import AOS from 'aos';
@@ -22,7 +20,12 @@ export default function ContactPage() {
                         <ContentCircle />
                         <div className="content-sub">
                             <div className="icon">
-                                <img alt="contact" className="svg" src={contact_icon} />
+                                <LazyLoadImage
+                                    src="/images/icons/contact.svg"
+                                    alt="contact"
+                                    effect="blur"
+                                    style={{display: 'block'}}
+                                />
                             </div>
                             <p>Contact our office</p>
                         </div>
@@ -30,7 +33,12 @@ export default function ContactPage() {
                             Jeckob Martin the best
                             <span> Contact Us </span>
                             <u>
-                                <img alt="line" src={line_icon} />
+                                <LazyLoadImage
+                                    src="/images/icons/line.svg"
+                                    alt="line"
+                                    effect="blur"
+                                    style={{display: 'block'}}
+                                />
                             </u>
                         </h1>
                     </div>
@@ -41,7 +49,12 @@ export default function ContactPage() {
                                 <div className="single-contact-item">
                                     <div className="single-contact-item__top">
                                         <div className="icon">
-                                            <img alt="call" src={phone_icon} />
+                                            <LazyLoadImage
+                                                src="/images/icons/phone.svg"
+                                                alt="call"
+                                                effect="blur"
+                                                style={{display: 'block'}}
+                                            />
                                         </div>
                                         <div className="text"><p>Contact Phone</p></div>
                                     </div>
@@ -52,7 +65,12 @@ export default function ContactPage() {
                                 <div className="single-contact-item">
                                     <div className="single-contact-item__top">
                                         <div className="cm-icon">
-                                            <img alt="mail-open" src={mail_icon} />
+                                            <LazyLoadImage
+                                                src="/images/icons/mail.svg"
+                                                alt="mail-open"
+                                                effect="blur"
+                                                style={{display: 'block'}}
+                                             />
                                         </div>
                                         <div className="text"><p>Contact Email</p></div>
                                     </div>

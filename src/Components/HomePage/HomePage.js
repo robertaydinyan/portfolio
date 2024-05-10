@@ -1,17 +1,9 @@
 import React, {useEffect} from 'react';
-import home_icon from '../../images/icons/home.svg'
-import email_icon from '../../images/icons/email.svg'
-import phone_icon from '../../images/icons/phone.svg'
-import code_image from '../../images/code.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import ContentCircle from '../layouts/ContentCircle'
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
 export default function HomePage() {
-    useEffect(() => {
-        AOS.init();
-    }, []);
 
     return (
         <div className="content-area">
@@ -21,7 +13,12 @@ export default function HomePage() {
 
                     <div className="content-sub">
                         <div className="icon">
-                            <img alt="home icon" src={home_icon}/>
+                            <LazyLoadImage
+                                    src="/images/icons/home.svg"
+                                    alt="home icon"
+                                    effect="blur"
+                                    style={{display: 'block'}}
+                            />
                         </div>
                         <p>Hi! There I’m</p>
                     </div>
@@ -32,19 +29,33 @@ export default function HomePage() {
                     <div className="contact-zone">
                         <a href="mailto:robert.aydinyan2002@gmail.com">
                             <span>
-                                <img alt="email" src={email_icon}/>
+                                <LazyLoadImage
+                                    src="/images/icons/email.svg"
+                                    alt="email"
+                                    effect="blur"
+                                    style={{display: 'block'}}
+                                />
                             </span>
                             robertrobert
                         </a>
                         <a href="callto:+37433230250">
                             <span>
-                                <img alt="email" src={phone_icon}/>
+                                <LazyLoadImage
+                                    src="/images/icons/phone.svg"
+                                    alt="email"
+                                    effect="blur"
+                                    style={{display: 'block'}}
+                                />
                             </span>
                             +374 33 230 250
                         </a>
                     </div>
                     <div className="content-img">
-                        <img alt="code" src={code_image}/>
+                        <LazyLoadImage
+                            src="/images/code.png"
+                            alt="code"
+                            effect="blur"
+                        />
                     </div>
                     <div className="counter">
                         <div className="counter-single">

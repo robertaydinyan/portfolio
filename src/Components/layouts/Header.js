@@ -1,9 +1,5 @@
 import React from 'react';
-import profile_picture from '../../images/profile_picture.jpeg';
-import github_icon from '../../images/icons/github.svg'
-// import instagram_icon from '../../images/icons/instagram.svg'
-import facebook_icon from '../../images/icons/facebook.svg'
-import linkedin_icon from '../../images/icons/linkedin.svg'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function Header() {
     return (
@@ -11,7 +7,12 @@ export default function Header() {
             <div className="author-content">
                 <div className="author-image">
                     <div className="profile-picture-container">
-                        <img alt="Profile Picture" src={profile_picture} className="profile-picture" />
+                        <LazyLoadImage
+                            src="/images/profile_picture.jpeg"
+                            alt="Profile Picture"
+                            effect="blur"
+                            className="profile-picture"
+                        />
                     </div>
                 </div>
 
@@ -30,13 +31,24 @@ export default function Header() {
                     <p> Let’s collaborate to bring your vision to life!</p>
                 </div>
                 
+
                 <div className="author-social-links">
                     <a href="https://www.facebook.com/robond0" className="social-links" target="_blank">
-                        <img alt="facebook" className="svg" src={facebook_icon}/>
+                        <LazyLoadImage
+                            src="/images/icons/facebook.svg"
+                            alt="Facebook"
+                            effect="blur"
+                            className="svg"
+                        />
                     </a>
 
                     <a href="https://github.com/robertaydinyan" className="social-links" target="_blank">
-                        <img alt="github" className="svg" src={github_icon}/>
+                        <LazyLoadImage
+                            src="/images/icons/github.svg"
+                            alt="github"
+                            effect="blur"
+                            className="svg"
+                        />
                     </a>
 
                     {/*<a href="https://www.instagram.com/" className="social-links" target="_blank">*/}
@@ -44,7 +56,12 @@ export default function Header() {
                     {/*</a>*/}
 
                     <a href="https://www.linkedin.com/in/robertaydinyan/" className="social-links" target="_blank">
-                        <img alt="linkedin" className="svg" src={linkedin_icon}/>
+                        <LazyLoadImage
+                            src="/images/icons/linkedin.svg"
+                            alt="linkedin"
+                            effect="blur"
+                            className="svg"
+                        />
                     </a>
                 </div>
             </div>

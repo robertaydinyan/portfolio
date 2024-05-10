@@ -1,11 +1,13 @@
 import React, {useEffect, useRef} from 'react';
-import x_lg_icon from '../../images/icons/x-lg.svg'
-import logo from '../../images/icons/icon.png'
-import home_icon from '../../images/icons/home.svg'
-import about_icon from '../../images/icons/about.svg'
-import portfolio_icon from '../../images/icons/portfolio.svg'
-import contact_icon from '../../images/icons/contact.svg'
+// import x_lg_icon from '../../images/icons/x-lg.svg'
+// import logo from '../../images/icons/icon.png'
+// import home_icon from '../../images/icons/home.svg'
+// import about_icon from '../../images/icons/about.svg'
+// import portfolio_icon from '../../images/icons/portfolio.svg'
+// import contact_icon from '../../images/icons/contact.svg'
 import {Link} from "react-router-dom";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 export default function Sidebar({isOpen, onClose}) {
     const sidebarRef = useRef(null);
@@ -23,11 +25,19 @@ export default function Sidebar({isOpen, onClose}) {
             <div className="menu-overlay" onClick={onClose}></div>
             <div className="menu-inner">
                 <div className="close-icon" onClick={onClose}>
-                    <img alt="image" width="16" height="16" src={x_lg_icon}/>
+                    <LazyLoadImage
+                        src="/images/icons/x_lg.svg"
+                        alt="logo"
+                        effect="blur"
+                    />
                 </div>
                 <div className="offcanvase__logo logo-area">
                     <a href="/">
-                        <img alt="image" src={logo} />
+                        <LazyLoadImage
+                                src="/images/icons/logo.svg"
+                                alt="logo"
+                                effect="blur"
+                            />
                     </a>
                 </div>
                 <div className="sidemenu">
@@ -35,25 +45,41 @@ export default function Sidebar({isOpen, onClose}) {
                         <ul>
                             <li>
                                 <Link className="link" to="/">
-                                    <img alt="image" width="18" height="15" className="svg" src={home_icon} />
-                                     Home
+                                    <LazyLoadImage
+                                        src="/images/icons/home.svg"
+                                        alt="logo"
+                                        effect="blur"
+                                    />
+                                    Home
                                 </Link>
                             </li>
                             <li>
                                 <Link className="link" to="/about">
-                                    <img alt="image" width="17" height="18" className="svg" src={about_icon} />
+                                    <LazyLoadImage
+                                        src="/images/icons/about.svg"
+                                        alt="logo"
+                                        effect="blur"
+                                    />
                                     About
                                 </Link>
                             </li>
                             <li>
                                 <Link className="link" to="/portfolio">
-                                    <img alt="image" width="18" height="16" className="svg" src={portfolio_icon} />
+                                    <LazyLoadImage
+                                        src="/images/icons/portfolio.svg"
+                                        alt="logo"
+                                        effect="blur"
+                                    />
                                     portfolio
                                 </Link>
                             </li>
                             <li>
                                 <a className="link" href="/contact">
-                                    <img alt="image" width="15" height="15" className="svg" src={contact_icon} />
+                                    <LazyLoadImage
+                                        src="/images/icons/contact.svg"
+                                        alt="logo"
+                                        effect="blur"
+                                    />
                                     Contact
                                 </a>
                             </li>

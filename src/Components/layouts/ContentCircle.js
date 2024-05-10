@@ -1,5 +1,5 @@
-import icon from "../../images/icons/icon.png";
 import React from "react";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function ContentCircle() {
     return (
@@ -14,7 +14,12 @@ export default function ContentCircle() {
                 </text>
             </svg>
             <div className="circle-logo">
-                <img alt="icon" src={icon} width="40"/>
+                <LazyLoadImage
+                    src="/images/icons/icon.png"
+                    alt="portfolio"
+                    effect="blur"
+                    width={35}
+                />
             </div>
         </div>
     )

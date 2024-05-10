@@ -1,8 +1,7 @@
 import React, {useEffect} from 'react';
 import ContentCircle from "../layouts/ContentCircle";
-import about_icon from "../../images/icons/about.svg"
-import line_icon from "../../images/icons/line.svg"
-import star_icon from "../../images/icons/star.svg"
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -30,14 +29,24 @@ export default function AboutPage() {
                         <ContentCircle />
                         <div className="content-sub">
                             <div className="icon">
-                                <img alt="icon" className="svg" src={about_icon} />
+                                <LazyLoadImage
+                                    src="/images/icons/about.svg"
+                                    alt="icon"
+                                    effect="blur"
+                                    style={{display: 'block'}}
+                                />
                             </div>
                             <p>Me! About</p>
                         </div>
                         <h1 className="main-title" data-aos="fade-up" data-aos-duration="1500">
                             Hire a Top Full Stack Web & Mobile Developer <span> Robert Aydinyan </span>
                             <u className="inline">
-                                <img alt="image" src={line_icon} />
+                                <LazyLoadImage
+                                    src="/images/icons/line.svg"
+                                    alt="image"
+                                    effect="blur"
+                                    style={{display: 'block'}}
+                                />
                             </u>
                              in Yerevan.
                         </h1>
@@ -64,7 +73,14 @@ export default function AboutPage() {
 
                     <div className="single-info-item">
                         <div className="row">
-                            <h3>Skills <img alt="image" src={line_icon} /></h3>
+                            <h3>Skills 
+                                 <LazyLoadImage
+                                    src="/images/icons/line.svg"
+                                    alt="image"
+                                    effect="blur"
+                                    style={{display: 'block'}}
+                                />
+                            </h3>
                             <div className="skill-container">
                                 <div className="single-skill-item">
                                     <div className="expertise__single">
@@ -101,71 +117,6 @@ export default function AboutPage() {
                             </div>
                         </div>
                     </div>
-                    <Swiper
-                        spaceBetween={50}
-                        slidesPerView={3}
-                        pagination={{ clickable: true }}
-                        scrollbar={{ draggable: true }}
-                        autoplay={{ delay: 1000 }}
-                    >
-                    <SwiperSlide>
-                        <div className="single-project">
-                            <img alt="image" width="143" height="57" 
-                            src={star_icon} />
-                            1
-                        </div>
-                    </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="single-project">
-                                <img alt="image" width="143" height="57" 
-                                src={star_icon} />
-                                2
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="single-project">
-                                <img alt="image" width="143" height="57" 
-                                src={star_icon} />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="single-project">
-                                <img alt="image" width="143" height="57" 
-                                src={star_icon} />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="single-project">
-                                <img alt="image" width="143" height="57" 
-                                src={star_icon} />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="single-project">
-                                <img alt="image" width="143" height="57" 
-                                src={star_icon} />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="single-project">
-                                <img alt="image" width="143" height="57" 
-                                src={star_icon} />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="single-project">
-                                <img alt="image" width="143" height="57" 
-                                src={star_icon} />
-                            </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
-                            <div className="single-project">
-                                <img alt="image" width="143" height="57" 
-                                src={star_icon} />
-                            </div>
-                        </SwiperSlide>
-                        {/* Add more <SwiperSlide> as needed */}
-                    </Swiper>
 
                     <div className="about-inf">
                         <div className="about-info-content">

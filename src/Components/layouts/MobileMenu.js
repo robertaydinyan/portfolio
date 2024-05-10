@@ -1,6 +1,5 @@
 import React from 'react';
-import logo from '../../images/icons/icon.png'
-import bars_icon from '../../images/icons/bars.svg'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export default function MobileMenu({openSidebar}) {
     return (
@@ -9,7 +8,11 @@ export default function MobileMenu({openSidebar}) {
                 <div className="menu-left">
                     <div className="logo-area">
                         <a href="/">
-                            <img alt="logo" src={logo} />
+                            <LazyLoadImage
+                                src="/images/icons/icon.png"
+                                alt="logo"
+                                effect="blur"
+                            />
                         </a>
                     </div>
                     {/*<div className="header-menu">*/}
@@ -21,7 +24,13 @@ export default function MobileMenu({openSidebar}) {
                 </div>
                 <div className="functionality cm-right" onClose={openSidebar}>
                     <div className="">
-                        <img alt="menu-bar" className="svg" src={bars_icon} onClick={openSidebar}/>
+                        <LazyLoadImage
+                            src="/images/icons/bars.png"
+                            alt="menu-bar"
+                            effect="blur"
+                            className="svg"
+                            onClick={openSidebar}
+                        />
                     </div>
                 </div>
             </div>

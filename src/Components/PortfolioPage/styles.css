@@ -21,8 +21,8 @@
     color: var(--cm-white);
     line-height: 100%;
     position: absolute;
-    left: 30px;
-    top: 30px;
+    left: 10px;
+    top: 10px;
     transition: var(--transition);
 }
 

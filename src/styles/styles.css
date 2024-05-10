@@ -169,8 +169,8 @@ ul {
 .author-view {
     padding: 50px 50px 48px;
     text-align: center;
-    min-width: 510px;
-    max-height: 940px;
+    max-width: 510px;
+    max-height: 1100px;
     flex-basis: 45%;
     background: var(--cm);
     border-radius: 10px;
@@ -179,19 +179,19 @@ ul {
 
 @media screen and (min-width: 1400px) and (max-width: 1600px) {
     .author-view {
-        min-width: 466px;
+        max-width: 466px;
     }
 }
 
 @media screen and (max-width: 1400px) {
     .author-view {
-        min-width: 380px;
+        max-width: 380px;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .author-view {
-        min-width: 320px;
+        max-width: 320px;
         max-height: 930px;
         padding: 30px;
     }
