@@ -47,7 +47,7 @@ export default function Footer({openSidebar}) {
                     <li>
                         <Link to="/portfolio" data-title="Portfolio" className="link active">
                             <LazyLoadImage
-                            src="/images/icons/about.svg"
+                            src="/images/icons/portfolio.svg"
                             alt="About Picture"
                             effect="blur"
                             className="svg"

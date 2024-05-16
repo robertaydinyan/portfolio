@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ContentCircle from "../layouts/ContentCircle";
 // import portfolio_icon from "../../images/icons/portfolio.svg"
 // import line_icon from "../../images/icons/line.svg"
@@ -7,14 +7,8 @@ import ContentCircle from "../layouts/ContentCircle";
 import './styles.css'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import projects from '../../data/projects.json'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 export default function PortfolioPage() {
-    useEffect(() => {
-        AOS.init();
-    }, []);
-
     return (
         <div className="content-area">
             <div className="content-box mode">
@@ -24,7 +18,7 @@ export default function PortfolioPage() {
                         <div className="content-sub">
                             <div className="icon">
                             </div>
-                            <p>Best Our Portfolio</p>
+                            <p>Best of My Portfolio</p>
                         </div>
                         <h1 className="main-title" data-aos="fade-up" data-aos-duration="1500">
                             Check out my
@@ -54,15 +48,8 @@ export default function PortfolioPage() {
                                             wrapperProps={null}
                                         />
                                         <a className="portfolio-cat" href="#">{project.cat}</a>
-                                        <div className="center-btn">
-                                            <a className="round-btn" href="/portfolio-details">
-                                                {/* <img alt="image" src={rotate_arrow_icon}/> */}
-                                                <LazyLoadImage
-                                                    src={"/images/icons/rotate-arrow.svg"}
-                                                    effect="blur"
-                                                    alt="image"
-                                                />
-                                            </a>
+                                        <div className="center-description">
+                                            <span>{project.description}</span>    
                                         </div>
                                     </div>
                                     <div className="portfolio-meta">

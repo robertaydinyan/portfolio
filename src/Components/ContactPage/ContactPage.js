@@ -1,17 +1,10 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import ContentCircle from "../layouts/ContentCircle";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-
 import './styles.css'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 export default function ContactPage() {
-    useEffect(() => {
-        AOS.init();
-    }, []);
-
     return (
         <div className="content-area">
             <div className="content-box mode">
@@ -27,10 +20,10 @@ export default function ContactPage() {
                                     style={{display: 'block'}}
                                 />
                             </div>
-                            <p>Contact our office</p>
+                            <p>Contact Me</p>
                         </div>
                         <h1 className="main-title" data-aos="fade-up" data-aos-duration="1500">
-                            Jeckob Martin the best
+                            Robert Aydinyan the best
                             <span> Contact Us </span>
                             <u>
                                 <LazyLoadImage
@@ -50,7 +43,7 @@ export default function ContactPage() {
                                     <div className="single-contact-item__top">
                                         <div className="icon">
                                             <LazyLoadImage
-                                                src="/images/icons/phone.svg"
+                                                src="/images/icons/phone-call.svg"
                                                 alt="call"
                                                 effect="blur"
                                                 style={{display: 'block'}}
@@ -66,7 +59,7 @@ export default function ContactPage() {
                                     <div className="single-contact-item__top">
                                         <div className="cm-icon">
                                             <LazyLoadImage
-                                                src="/images/icons/mail.svg"
+                                                src="/images/icons/mail-open.svg"
                                                 alt="mail-open"
                                                 effect="blur"
                                                 style={{display: 'block'}}

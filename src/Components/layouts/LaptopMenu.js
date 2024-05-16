@@ -1,9 +1,9 @@
 import React from 'react';
 import TopBar from './TopBar'
 
-export default function MobileMenu({openSidebar}) {
+export default function LaptopMenu({openSidebar}) {
     return (
-        <div className="mobile-menu">
+        <div className="header">
            <TopBar openSidebar={openSidebar} />
         </div>
     );

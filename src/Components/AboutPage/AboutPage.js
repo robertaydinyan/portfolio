@@ -1,26 +1,10 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import ContentCircle from "../layouts/ContentCircle";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import './styles.css'
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-// import SwiperCore from 'swiper/core'; 
-// import { Autoplay } from 'swiper'; // Import Autoplay from swiper
-
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-
 export default function AboutPage() {
-    useEffect(() => {
-        AOS.init();
-    }, []);
-
     return (
         <div className="content-area">
             <div className="content-box mode">
@@ -91,26 +75,68 @@ export default function AboutPage() {
                                         </div>
                                     </div>
                                     <div className="expertise__single">
-                                        <p className="expertise__title">Mobile Development - <span>90%</span></p>
+                                        <p className="expertise__title">Mobile Development - <span>82%</span></p>
+                                        <div className="progress">
+                                            <div className="progress-bar" role="progressbar" aria-valuenow="90" 
+                                            aria-valuemin="0" aria-valuemax="100" style={{width:"82%"}}></div>
+                                        </div>
+                                    </div>
+                                    <div className="expertise__single">
+                                        <p className="expertise__title">React Native - <span>82%</span></p>
+                                        <div className="progress">
+                                            <div className="progress-bar" role="progressbar" aria-valuenow="90" 
+                                            aria-valuemin="0" aria-valuemax="100" style={{width:"82%"}}></div>
+                                        </div>
+                                    </div>
+                                    <div className="expertise__single">
+                                        <p className="expertise__title">Angular, ReactJS - <span>90%</span></p>
                                         <div className="progress">
                                             <div className="progress-bar" role="progressbar" aria-valuenow="90" 
                                             aria-valuemin="0" aria-valuemax="100" style={{width:"90%"}}></div>
                                         </div>
                                     </div>
+                                    <div className="expertise__single">
+                                        <p className="expertise__title">Python, Django - <span>75%</span></p>
+                                        <div className="progress">
+                                            <div className="progress-bar" role="progressbar" aria-valuenow="90" 
+                                            aria-valuemin="0" aria-valuemax="100" style={{width:"75%"}}></div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="single-skill-item">
                                     <div className="expertise__single">
-                                        <p className="expertise__title">PHP, HTML/CSS, Javascript - <span>95%</span></p>
+                                        <p className="expertise__title">HTML/CSS, JS - <span>95%</span></p>
                                         <div className="progress">
                                             <div className="progress-bar" role="progressbar" aria-valuenow="90" 
                                             aria-valuemin="0" aria-valuemax="100" style={{width:"95%"}}></div>
                                         </div>
                                     </div>
                                     <div className="expertise__single">
-                                        <p className="expertise__title">MySQL, React Native, REST API - <span>93%</span></p>
+                                        <p className="expertise__title">PHP, MySQL - <span>95%</span></p>
                                         <div className="progress">
                                             <div className="progress-bar" role="progressbar" aria-valuenow="90" 
-                                            aria-valuemin="0" aria-valuemax="100" style={{width:"93%"}}></div>
+                                            aria-valuemin="0" aria-valuemax="100" style={{width:"95%"}}></div>
+                                        </div>
+                                    </div>
+                                    <div className="expertise__single">
+                                        <p className="expertise__title">LEMP, LAMP - <span>81%</span></p>
+                                        <div className="progress">
+                                            <div className="progress-bar" role="progressbar" aria-valuenow="90" 
+                                            aria-valuemin="0" aria-valuemax="100" style={{width:"81%"}}></div>
+                                        </div>
+                                    </div>
+                                    <div className="expertise__single">
+                                        <p className="expertise__title">Yii2, Laravel - <span>92%</span></p>
+                                        <div className="progress">
+                                            <div className="progress-bar" role="progressbar" aria-valuenow="90" 
+                                            aria-valuemin="0" aria-valuemax="100" style={{width:"92%"}}></div>
+                                        </div>
+                                    </div>
+                                    <div className="expertise__single">
+                                        <p className="expertise__title">AWS, Hostinger - <span>75%</span></p>
+                                        <div className="progress">
+                                            <div className="progress-bar" role="progressbar" aria-valuenow="90" 
+                                            aria-valuemin="0" aria-valuemax="100" style={{width:"75%"}}></div>
                                         </div>
                                     </div>
                                 </div>

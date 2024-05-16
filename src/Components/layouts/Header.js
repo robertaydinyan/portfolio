@@ -1,7 +1,18 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import {Link} from "react-router-dom";
 
 export default function Header() {
+
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = 'Robert_Aydinyan_CV.pdf';
+        link.download = 'filename.extension';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return (
         <div className="author-view">
             <div className="author-content">
@@ -22,8 +33,8 @@ export default function Header() {
                 </div>
 
                 <div className="author-hiring">
-                    <a className="btn primary" href="/contact">Hire Me!</a>
-                    <a className="btn" href="#">Download CV</a>
+                    <Link className="btn primary" to="/contact">Hire Me!</Link>
+                    <a className="btn" href="#" onClick={handleDownload}>Download CV</a>
                 </div>
 
                 <div className="author-description">
@@ -33,14 +44,6 @@ export default function Header() {
                 
 
                 <div className="author-social-links">
-                    <a href="https://www.facebook.com/robond0" className="social-links" target="_blank">
-                        <LazyLoadImage
-                            src="/images/icons/facebook.svg"
-                            alt="Facebook"
-                            effect="blur"
-                            className="svg"
-                        />
-                    </a>
 
                     <a href="https://github.com/robertaydinyan" className="social-links" target="_blank">
                         <LazyLoadImage
@@ -50,10 +53,6 @@ export default function Header() {
                             className="svg"
                         />
                     </a>
-
-                    {/*<a href="https://www.instagram.com/" className="social-links" target="_blank">*/}
-                    {/*    <img alt="instagram" className="svg" src={instagram_icon}/>*/}
-                    {/*</a>*/}
 
                     <a href="https://www.linkedin.com/in/robertaydinyan/" className="social-links" target="_blank">
                         <LazyLoadImage

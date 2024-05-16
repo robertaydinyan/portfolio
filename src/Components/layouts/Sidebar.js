@@ -26,7 +26,7 @@ export default function Sidebar({isOpen, onClose}) {
             <div className="menu-inner">
                 <div className="close-icon" onClick={onClose}>
                     <LazyLoadImage
-                        src="/images/icons/x_lg.svg"
+                        src="/images/icons/x-lg.svg"
                         alt="logo"
                         effect="blur"
                     />
@@ -34,17 +34,17 @@ export default function Sidebar({isOpen, onClose}) {
                 <div className="offcanvase__logo logo-area">
                     <a href="/">
                         <LazyLoadImage
-                                src="/images/icons/logo.svg"
-                                alt="logo"
-                                effect="blur"
-                            />
+                            src="/images/icons/icon.png"
+                            alt="logo"
+                            effect="blur"
+                        />
                     </a>
                 </div>
                 <div className="sidemenu">
                     <div className="menu">
                         <ul>
                             <li>
-                                <Link className="link" to="/">
+                                <Link className="link" to="/" onClick={onClose}>
                                     <LazyLoadImage
                                         src="/images/icons/home.svg"
                                         alt="logo"
@@ -54,7 +54,7 @@ export default function Sidebar({isOpen, onClose}) {
                                 </Link>
                             </li>
                             <li>
-                                <Link className="link" to="/about">
+                                <Link className="link" to="/about" onClick={onClose}>
                                     <LazyLoadImage
                                         src="/images/icons/about.svg"
                                         alt="logo"
@@ -64,7 +64,7 @@ export default function Sidebar({isOpen, onClose}) {
                                 </Link>
                             </li>
                             <li>
-                                <Link className="link" to="/portfolio">
+                                <Link className="link" to="/portfolio" onClick={onClose}>
                                     <LazyLoadImage
                                         src="/images/icons/portfolio.svg"
                                         alt="logo"
@@ -74,14 +74,14 @@ export default function Sidebar({isOpen, onClose}) {
                                 </Link>
                             </li>
                             <li>
-                                <a className="link" href="/contact">
+                                <Link className="link" to="/contact" onClick={onClose}>
                                     <LazyLoadImage
                                         src="/images/icons/contact.svg"
                                         alt="logo"
                                         effect="blur"
                                     />
                                     Contact
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>

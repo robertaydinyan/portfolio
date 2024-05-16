@@ -15,6 +15,12 @@
     width: 50%;
 }
 
+@media screen and (max-width: 992px) {
+    .single-skill-item {
+        width: 100%;
+    }
+}
+
 .single-skill-item .expertise__single:not(:last-child) {
     margin-bottom: 25px;
 }
@@ -33,6 +39,12 @@
 .skill-container{
     display: flex;
     gap: 30px;
+}
+
+@media screen and (max-width: 992px) {
+    .skill-container {
+        flex-wrap: wrap;
+    }
 }
 
 
