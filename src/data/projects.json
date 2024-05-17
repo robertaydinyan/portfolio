@@ -4,25 +4,36 @@
         "title": "Yerevan Mall",
         "tag": "Web Development",
         "cat": "Web Development",
-        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-        "height": 3
+        "description": "Operationalized business intelligence solutions and conducted advanced analytics to identify opportunities and strengths to meet business goals. Created and maintained data visualizations that educated, informed and engaged business partners on key metrics and performance measures.",
+        "height": 3,
+        "heihgtPX": 945
     },
     {
         "id": 2,
         "title": "Grocera",
         "tag": "Web Development",
-        "cat": "Web Development"
+        "cat": "Web Development",
+        "description": "Grocera, an LA-based online grocery platform, offers a curated selection of high-quality organic products, prioritizing freshness, local partnerships, and customer satisfaction."
     },
     {
         "id": 3,
         "title": "Youmme tech",
         "tag": "Web Development",
-        "cat": "Web Development"
+        "cat": "Web Development",
+        "description": "technology allows you to obtain initial data on innate character traits, mental and physical characteristics, predispositions, intelligence, communication skills and innate talents only on the basis of a portrait photo and several initial data:"
     },
     {
         "id": 4,
         "title": "Games Sakla",
         "tag": "Web Development",
-        "cat": "Web Development"
+        "cat": "Web Development",
+        "description": "The project was designed to help children learn road rules through game."
+    },
+    {
+        "id": 5,
+        "title": "Armenian partners",
+        "tag": "Mobile Development",
+        "cat": "Mobile Development",
+        "description": "Armenian partners is a safe business environment for networking, job hunting, crowdfunding and investing. Our goal is to make all investment and fundraising opportunities equally accessible to anyone who aims to have its dime in making Armenia a greater country and fulfill their immense potential"
     }
 ]

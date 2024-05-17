@@ -1,10 +1,55 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ContentCircle from "../layouts/ContentCircle";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import emailjs from 'emailjs-com';
+import { toast } from 'react-toastify';
 
 import './styles.css'
 
 export default function ContactPage() {
+    const [inputValues, setInputValues] = useState({
+        firstName: '',
+        lastName: '',
+        phone: '',
+        email: '',
+        message: ''
+    });
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setInputValues({
+            ...inputValues,
+            [name]: value
+        });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const isEmpty = Object.values(inputValues).some(value => value === '');
+
+        if (isEmpty) {
+            toast.error('Please fill in all fields before submitting.');
+        } else {
+            e.preventDefault();
+            const serviceId = process.env.REACT_APP_EMAIL_SERVICE_ID;
+            const templateId = process.env.REACT_APP_EMAIL_TEMPLATE_ID;
+            const userId = process.env.REACT_APP_EMAIL_PUBLIC_KEY
+            emailjs.send(
+                serviceId,
+                templateId,
+                inputValues,
+                userId
+              )
+                .then(() => {
+                    setInputValues({ firstName: '', lastName: '', email: '', phone: '', message: '' });
+                    toast.success('Your message was sent successfully!');
+                })
+                .catch((e) => {
+                    toast.error('There was an error sending your message. Please try again later.');
+                });
+        }
+    };
+    
     return (
         <div className="content-area">
             <div className="content-box mode">
@@ -68,7 +113,7 @@ export default function ContactPage() {
                                         <div className="text"><p>Contact Email</p></div>
                                     </div>
                                     <div className="single-contact-item__bottom">
-                                        <a href="mailto:robert.aydinyan2002@gmail.com">robert.aydinyan2002@gmail.com</a>
+                                        <a href="mailto:contact@robond.dev">contact@robond.dev</a>
                                     </div>
                                 </div>
                             </div>
@@ -76,31 +121,41 @@ export default function ContactPage() {
                         <div className="contact-form">
                             <h3 className="section-title">Contact Us</h3>
                             <div className="contact-form__content">
-                                <form className="form">
+                                <form className="form" onSubmit={handleSubmit}>
                                     <div className="single-input">
                                         <div className="single-input__item">
-                                            <label for="fname">Your first name <span>*</span></label>
-                                            <input id="fname" required type="text" name="fname" autoCorrect="false"  />
+                                            <label htmlFor="fname">Your first name <span>*</span></label>
+                                            <input id="fname" required type="text" autoCorrect="false" 
+                                                    name="firstName" value={inputValues.firstName} onChange={handleChange} />
                                         </div>
                                         <div className="single-input__item">
-                                            <label for="lname">Your last name <span>*</span></label>
-                                            <input id="lname" required type="text" name="lname" autoCorrect="false"  />
+                                            <label htmlFor="lname">Your last name <span>*</span></label>
+                                            <input id="lname" required type="text" autoCorrect="false"
+                                                    name="lastName" value={inputValues.lastName} onChange={handleChange} />
                                         </div>
                                     </div>
                                     <div className="single-input">
                                         <div className="single-input__item">
-                                            <label for="email">Your email address <span>*</span></label>
-                                            <input id="email" required type="email" name="email" autoCorrect="false"  />
+                                            <label htmlFor="email">Your email address <span>*</span></label>
+                                            <input id="email" required type="email" autoCorrect="false"
+                                                    name="email" value={inputValues.email} onChange={handleChange} />
                                         </div>
                                         <div className="single-input__item">
-                                            <label for="phone">Your phone number <span>*</span></label>
-                                            <input id="phone" className="no-arrows" required type="number" name="phone" autoCorrect="false" />
+                                            <label htmlFor="phone">Your phone number <span>*</span></label>
+                                            <input id="phone" className="no-arrows" required type="number" autoCorrect="false"
+                                                    name="phone" value={inputValues.phone} onChange={handleChange} />
                                         </div>
                                     </div>
                                     <div className="single-input">
                                         <div className="single-input__item w-full">
-                                            <label for="msg">Your message <span>*</span></label>
-                                            <textarea name="msg" id="msg" required></textarea></div>
+                                            <label htmlFor="msg">Your message <span>*</span></label>
+                                            <textarea
+                                                id="msg" required 
+                                                name="message"
+                                                value={inputValues.message}
+                                                onChange={handleChange}
+                                            />
+                                        </div>
                                     </div>
                                     <button type="submit" className="btn primary">Submit Now</button>
                                 </form>

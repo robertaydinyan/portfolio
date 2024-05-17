@@ -6,8 +6,8 @@ export default function Header() {
 
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = 'Robert_Aydinyan_CV.pdf';
-        link.download = 'filename.extension';
+        link.href = 'Robert Aydinyan.pdf';
+        link.download = 'Robert Aydinyan.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

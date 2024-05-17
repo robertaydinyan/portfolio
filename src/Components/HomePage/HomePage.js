@@ -27,7 +27,7 @@ export default function HomePage() {
                         I'm building Minimalistic and User-Centric <span>Web & Mobile</span> Solutions.
                     </h1>
                     <div className="contact-zone">
-                        <a href="mailto:robert.aydinyan2002@gmail.com">
+                        <a href="mailto:contact@robond.dev">
                             <span>
                                 <LazyLoadImage
                                     src="/images/icons/email.svg"
@@ -36,7 +36,7 @@ export default function HomePage() {
                                     style={{display: 'block'}}
                                 />
                             </span>
-                            robertrobert
+                            contact@robond.dev
                         </a>
                         <a href="callto:+37433230250">
                             <span>

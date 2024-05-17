@@ -88,8 +88,8 @@ export default function Sidebar({isOpen, onClose}) {
                 </div>
                 <div className="sidecontact">
                     <h6>Contact Me</h6>
-                    <a href="tel:+8801712345678">+8801712345678</a>
-                    <a href="mailto:axz@axz.com">axz@axz.com</a>
+                    <a href="tel:+37433230250">+37433230250</a>
+                    <a href="mailto:contact@robond.dev">contact@robond.dev</a>
                 </div>
             </div>
         </div>

@@ -12,8 +12,10 @@ import PortfolioPage from "./Components/PortfolioPage/PortfolioPage";
 import ContactPage from "./Components/ContactPage/ContactPage";
 import React, {useEffect} from 'react';
 
+import { ToastContainer } from 'react-toastify';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 import {useState} from "react";
 
@@ -34,6 +36,7 @@ function App() {
 
     return (
         <div className="container">
+            <ToastContainer />
             <BrowserRouter>
                 <MobileMenu openSidebar={openSidebar} />
                 <Header />

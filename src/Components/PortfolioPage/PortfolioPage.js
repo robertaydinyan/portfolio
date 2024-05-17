@@ -44,7 +44,7 @@ export default function PortfolioPage() {
                                             src={"/images/projects/0" + (index + 1) + "/01.png"}
                                             alt="portfolio-item"
                                             effect="blur"
-                                            style={{ display: 'block', width: '100%' }}
+                                            style={{ display: 'block', width: '100%', height: project.heihgtPX + 'px' }}
                                             wrapperProps={null}
                                         />
                                         <a className="portfolio-cat" href="#">{project.cat}</a>
