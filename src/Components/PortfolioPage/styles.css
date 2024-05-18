@@ -17,9 +17,10 @@
     width: 100%;
 }
 
-.portfolio .portfolio-item .single-portfolio-content .portfolio-thumb>img {
+.portfolio .portfolio-item .single-portfolio-content .portfolio-thumb img {
     border-radius: 20px;
     width: 100%;
+    object-fit: cover;
 }
 
 .portfolio .portfolio-item .single-portfolio-content .portfolio-thumb .portfolio-cat {
@@ -64,7 +65,7 @@
 .portfolio .portfolio-item .single-portfolio-content .portfolio-thumb .center-description {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 3px);
     left: 0;
     top: 0;
     background: rgba(0, 0, 0, 0.8);
@@ -75,6 +76,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 20px;
 }
 
 .portfolio .portfolio-item .single-portfolio-content .portfolio-thumb:hover .center-description {

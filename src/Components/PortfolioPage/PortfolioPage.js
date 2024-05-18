@@ -41,7 +41,7 @@ export default function PortfolioPage() {
                                 }} key={project.id}>
                                     <div className="portfolio-thumb">
                                         <LazyLoadImage
-                                            src={"/images/projects/0" + (index + 1) + "/01.png"}
+                                            src={"/images/projects/0" + (project.id) + "/01.png"}
                                             alt="portfolio-item"
                                             effect="blur"
                                             style={{ display: 'block', width: '100%', height: project.heihgtPX + 'px' }}

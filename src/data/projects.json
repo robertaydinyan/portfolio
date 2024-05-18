@@ -1,39 +1,50 @@
 [
     {
+        "id": 2,
+        "title": "Grocera Store",
+        "tag": "Web Development",
+        "cat": "Web Development",
+        "description": "Grocera, an LA-based online grocery platform, offers a curated selection of high-quality organic products, prioritizing freshness, local partnerships, and customer satisfaction.",
+        "heihgtPX": 200
+    },
+    {
+        "id": 6,
+        "title": "CyberGPT Chat",
+        "tag": "Web Development",
+        "cat": "Web Development",
+        "description": "A web-based application hosting multiple specialized GPT models/agents, each tailored to specific cybersecurity roles, collaborating with each other to provide comprehensive cybersecurity solutions.",
+        "heihgtPX": 200
+    },
+    {
         "id": 1,
-        "title": "Yerevan Mall",
+        "title": "Yerevan Mall Report Builder",
         "tag": "Web Development",
         "cat": "Web Development",
         "description": "Operationalized business intelligence solutions and conducted advanced analytics to identify opportunities and strengths to meet business goals. Created and maintained data visualizations that educated, informed and engaged business partners on key metrics and performance measures.",
-        "height": 3,
-        "heihgtPX": 945
-    },
-    {
-        "id": 2,
-        "title": "Grocera",
-        "tag": "Web Development",
-        "cat": "Web Development",
-        "description": "Grocera, an LA-based online grocery platform, offers a curated selection of high-quality organic products, prioritizing freshness, local partnerships, and customer satisfaction."
-    },
-    {
-        "id": 3,
-        "title": "Youmme tech",
-        "tag": "Web Development",
-        "cat": "Web Development",
-        "description": "technology allows you to obtain initial data on innate character traits, mental and physical characteristics, predispositions, intelligence, communication skills and innate talents only on the basis of a portrait photo and several initial data:"
-    },
-    {
-        "id": 4,
-        "title": "Games Sakla",
-        "tag": "Web Development",
-        "cat": "Web Development",
-        "description": "The project was designed to help children learn road rules through game."
+        "height": 1,
+        "heihgtPX": 686
     },
     {
         "id": 5,
         "title": "Armenian partners",
         "tag": "Mobile Development",
         "cat": "Mobile Development",
-        "description": "Armenian partners is a safe business environment for networking, job hunting, crowdfunding and investing. Our goal is to make all investment and fundraising opportunities equally accessible to anyone who aims to have its dime in making Armenia a greater country and fulfill their immense potential"
+        "description": "Armenian partners is a safe business environment for networking, job hunting, crowdfunding and investing. Our goal was to make all investment and fundraising opportunities equally accessible to anyone who aims to have its dime in making Armenia a greater country and fulfill their immense potential"
+    },
+    {
+        "id": 3,
+        "title": "Youmme tech",
+        "tag": "Web Development",
+        "cat": "Web Development",
+        "description": "A technology allows you to obtain initial data on innate character traits, mental and physical characteristics, predispositions, intelligence, communication skills and innate talents only on the basis of a portrait photo and several initial data:",
+        "heihgtPX": 220
+    },
+    {
+        "id": 4,
+        "title": "Games Sakla",
+        "tag": "Web Development",
+        "cat": "Web Development",
+        "description": "The project was designed to help children learn road rules through game.",
+        "heihgtPX": 220
     }
 ]
