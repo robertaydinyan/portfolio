@@ -9,8 +9,13 @@ import {Link} from "react-router-dom";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
-export default function Sidebar({isOpen, onClose}) {
+export default function Sidebar({isOpen, onClose, setShowHeader}) {
     const sidebarRef = useRef(null);
+
+    const linkClick = (page) => {
+        onClose()
+        setShowHeader(page == '/')
+    }
 
     useEffect(() => {
         if (isOpen) {
@@ -22,7 +27,7 @@ export default function Sidebar({isOpen, onClose}) {
 
     return (
         <div className="offcanvase" ref={sidebarRef}>
-            <div className="menu-overlay" onClick={onClose}></div>
+            <div className="menu-overlay" onClick={(onClose)}></div>
             <div className="menu-inner">
                 <div className="close-icon" onClick={onClose}>
                     <LazyLoadImage
@@ -32,19 +37,19 @@ export default function Sidebar({isOpen, onClose}) {
                     />
                 </div>
                 <div className="offcanvase__logo logo-area">
-                    <a href="/">
+                    <Link to="/" onClick={() => linkClick('/')}>
                         <LazyLoadImage
                             src="/images/icons/icon.png"
                             alt="logo"
                             effect="blur"
                         />
-                    </a>
+                    </Link>
                 </div>
                 <div className="sidemenu">
                     <div className="menu">
                         <ul>
                             <li>
-                                <Link className="link" to="/" onClick={onClose}>
+                                <Link className="link" to="/" onClick={() => linkClick('/')}>
                                     <LazyLoadImage
                                         src="/images/icons/home.svg"
                                         alt="logo"
@@ -54,7 +59,7 @@ export default function Sidebar({isOpen, onClose}) {
                                 </Link>
                             </li>
                             <li>
-                                <Link className="link" to="/about" onClick={onClose}>
+                                <Link className="link" to="/about" onClick={() => linkClick('/about')}>
                                     <LazyLoadImage
                                         src="/images/icons/about.svg"
                                         alt="logo"
@@ -64,7 +69,7 @@ export default function Sidebar({isOpen, onClose}) {
                                 </Link>
                             </li>
                             <li>
-                                <Link className="link" to="/portfolio" onClick={onClose}>
+                                <Link className="link" to="/portfolio" onClick={() => linkClick('/portfolio')}>
                                     <LazyLoadImage
                                         src="/images/icons/portfolio.svg"
                                         alt="logo"
@@ -74,7 +79,7 @@ export default function Sidebar({isOpen, onClose}) {
                                 </Link>
                             </li>
                             <li>
-                                <Link className="link" to="/contact" onClick={onClose}>
+                                <Link className="link" to="/contact" onClick={() => linkClick('/contact')}>
                                     <LazyLoadImage
                                         src="/images/icons/contact.svg"
                                         alt="logo"

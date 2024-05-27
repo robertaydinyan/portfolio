@@ -2,8 +2,7 @@ import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import {Link} from "react-router-dom";
 
-export default function Header() {
-
+export default function Header({showHeader}) {
     const handleDownload = () => {
         const link = document.createElement('a');
         link.href = 'Robert Aydinyan.pdf';
@@ -14,7 +13,7 @@ export default function Header() {
     };
 
     return (
-        <div className="author-view">
+        <div className={`author-view ${!showHeader ? "hide-in-mobile" : ""}`}>
             <div className="author-content">
                 <div className="author-image">
                     <div className="profile-picture-container">

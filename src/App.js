@@ -21,13 +21,15 @@ import {useState} from "react";
 
 function App() {
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
+    const [showHeader, setShowHeader] = useState(window.location.pathname === '/');
+    
     const openSidebar = () => {
         setIsSidebarOpen(true);
     };
 
     const closeSidebar = () => {
         setIsSidebarOpen(false);
+
     };
 
     useEffect(() => {
@@ -39,7 +41,7 @@ function App() {
             <ToastContainer />
             <BrowserRouter>
                 <MobileMenu openSidebar={openSidebar} />
-                <Header />
+                <Header showHeader={showHeader}/>
                 <div className="page-content">
                     <LaptopMenu openSidebar={openSidebar} />
                     <Routes>
@@ -50,7 +52,7 @@ function App() {
                     </Routes>
                 </div>
                 <Footer openSidebar={openSidebar} />
-                <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
+                <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} setShowHeader={setShowHeader} />
             </BrowserRouter>
         </div>
     );
