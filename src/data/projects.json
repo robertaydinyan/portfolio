@@ -40,6 +40,14 @@
         "heihgtPX": 220
     },
     {
+        "id": 7,
+        "title": "Loco",
+        "tag": "Web Development",
+        "cat": "Web Development",
+        "description": "The project is a standard restaurant reservation system that includes an interactive map for booking tables, as well as about and contact sections for more information and customer inquiries.",
+        "heihgtPX": 220
+    },
+    {
         "id": 4,
         "title": "Games Sakla",
         "tag": "Web Development",
