@@ -96,6 +96,13 @@ export default function AboutPage() {
                                         </div>
                                     </div>
                                     <div className="expertise__single">
+                                        <p className="expertise__title">Node, express - <span>75%</span></p>
+                                        <div className="progress">
+                                            <div className="progress-bar" role="progressbar" aria-valuenow="90" 
+                                            aria-valuemin="0" aria-valuemax="100" style={{width:"75%"}}></div>
+                                        </div>
+                                    </div>
+                                    <div className="expertise__single">
                                         <p className="expertise__title">Python, Django - <span>75%</span></p>
                                         <div className="progress">
                                             <div className="progress-bar" role="progressbar" aria-valuenow="90" 
@@ -112,7 +119,7 @@ export default function AboutPage() {
                                         </div>
                                     </div>
                                     <div className="expertise__single">
-                                        <p className="expertise__title">PHP, MySQL - <span>95%</span></p>
+                                        <p className="expertise__title">PHP - <span>95%</span></p>
                                         <div className="progress">
                                             <div className="progress-bar" role="progressbar" aria-valuenow="90" 
                                             aria-valuemin="0" aria-valuemax="100" style={{width:"95%"}}></div>
@@ -139,6 +146,14 @@ export default function AboutPage() {
                                             aria-valuemin="0" aria-valuemax="100" style={{width:"75%"}}></div>
                                         </div>
                                     </div>
+                                    <div className="expertise__single">
+                                        <p className="expertise__title">MySQL, PostgreSQL - <span>85%</span></p>
+                                        <div className="progress">
+                                            <div className="progress-bar" role="progressbar" aria-valuenow="90" 
+                                            aria-valuemin="0" aria-valuemax="100" style={{width:"85%"}}></div>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>

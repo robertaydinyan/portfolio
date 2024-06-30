@@ -5,8 +5,8 @@ import {Link} from "react-router-dom";
 export default function Header({showHeader}) {
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = 'Robert Aydinyan.pdf';
-        link.download = 'Robert Aydinyan.pdf';
+        link.href = 'CV.pdf';
+        link.download = 'CV.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
