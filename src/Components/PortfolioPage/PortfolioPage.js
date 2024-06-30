@@ -54,7 +54,7 @@ export default function PortfolioPage() {
                                     </div>
                                     <div className="portfolio-meta">
                                         <div className="tag"><span>Type:</span> {project.tag}</div>
-                                        <a className="title" href="/portfolio-details">{ project.title }</a>
+                                        <a className="title" href="#">{ project.title }</a>
                                     </div>
                                 </div>
                             ))}
