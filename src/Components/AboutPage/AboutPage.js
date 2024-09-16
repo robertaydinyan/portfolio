@@ -147,10 +147,17 @@ export default function AboutPage() {
                                         </div>
                                     </div>
                                     <div className="expertise__single">
-                                        <p className="expertise__title">MySQL, PostgreSQL - <span>85%</span></p>
+                                        <p className="expertise__title">MySQL, PostgreSQL, MongoDB - <span>85%</span></p>
                                         <div className="progress">
                                             <div className="progress-bar" role="progressbar" aria-valuenow="90" 
                                             aria-valuemin="0" aria-valuemax="100" style={{width:"85%"}}></div>
+                                        </div>
+                                    </div>
+                                    <div className="expertise__single">
+                                        <p className="expertise__title">Docker - <span>75%</span></p>
+                                        <div className="progress">
+                                            <div className="progress-bar" role="progressbar" aria-valuenow="90" 
+                                            aria-valuemin="0" aria-valuemax="100" style={{width:"75%"}}></div>
                                         </div>
                                     </div>
                                     
