@@ -18,7 +18,7 @@ export default function Header({showHeader}) {
                 <div className="author-image">
                     <div className="profile-picture-container">
                         <LazyLoadImage
-                            src="/images/profile_picture.jpeg"
+                            src="/images/profile_picture.jpg"
                             alt="Profile Picture"
                             effect="blur"
                             className="profile-picture"
