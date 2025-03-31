@@ -1,5 +1,21 @@
 [
     {
+        "id": 9,
+        "title": "Eleap",
+        "tag": "Web Development",
+        "cat": "Web Development",
+        "description": " eLeaP Software is a cloud-based Learning Management System (LMS) designed to help businesses deliver, track, and manage employee training. It offers customizable training solutions, compliance management, and reporting tools to enhance workforce development.",
+        "heihgtPX": 200
+    },
+    {
+        "id": 8,
+        "title": "Aesthetidocs",
+        "tag": "Web Development",
+        "cat": "Web Development",
+        "description": "An automated clinic management system streamlining daily operations, including customizable appointment calendars, report generation, and an integrated external booking platform tailored for each clinic's specific needs.",
+        "heihgtPX": 200
+    },
+    {
         "id": 2,
         "title": "Grocera Store",
         "tag": "Web Development",
