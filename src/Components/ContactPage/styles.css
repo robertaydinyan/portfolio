@@ -130,3 +130,23 @@
 .contact-area .contact-form__content .form .single-input__item.w-full {
     width: 100%;
 }
+
+/*
+ * Honeypot field — must be invisible to humans but reachable by naive bots,
+ * so we avoid display:none / visibility:hidden (which some scrapers skip).
+ */
+.hp-field {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.contact-area .contact-form .form button.btn.primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
