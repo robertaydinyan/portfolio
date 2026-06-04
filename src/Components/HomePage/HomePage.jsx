@@ -38,7 +38,7 @@ export default function HomePage() {
                             </span>
                             contact@robond.dev
                         </a>
-                        <a href="callto:+37433230250">
+                        <a href="tel:+37433230250">
                             <span>
                                 <LazyLoadImage
                                     src="/images/icons/phone.svg"
@@ -59,7 +59,7 @@ export default function HomePage() {
                     </div>
                     <div className="counter">
                         <div className="counter-single">
-                            <span className="count-item theme">6</span>
+                            <span className="count-item theme">7</span>
                             <p>Years of experience.</p>
                         </div>
                         <div className="counter-single">

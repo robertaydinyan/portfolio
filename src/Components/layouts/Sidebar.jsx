@@ -14,7 +14,7 @@ export default function Sidebar({isOpen, onClose, setShowHeader}) {
 
     const linkClick = (page) => {
         onClose()
-        setShowHeader(page == '/')
+        setShowHeader(page === '/')
     }
 
     useEffect(() => {
@@ -95,6 +95,16 @@ export default function Sidebar({isOpen, onClose, setShowHeader}) {
                     <h6>Contact Me</h6>
                     <a href="tel:+37433230250">+37433230250</a>
                     <a href="mailto:contact@robond.dev">contact@robond.dev</a>
+                    <div className="sidecontact__socials">
+                        <a
+                            href="https://www.linkedin.com/in/robertaydinyan/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            <LazyLoadImage src="/images/icons/linkedin.svg" alt="LinkedIn" effect="blur" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

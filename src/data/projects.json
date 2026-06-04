@@ -1,74 +1,186 @@
-[
-    {
-        "id": 9,
-        "title": "Eleap",
-        "tag": "Web Development",
-        "cat": "Web Development",
-        "description": " eLeaP Software is a cloud-based Learning Management System (LMS) designed to help businesses deliver, track, and manage employee training. It offers customizable training solutions, compliance management, and reporting tools to enhance workforce development.",
-        "heihgtPX": 200
-    },
-    {
-        "id": 8,
-        "title": "Aesthetidocs",
-        "tag": "Web Development",
-        "cat": "Web Development",
-        "description": "An automated clinic management system streamlining daily operations, including customizable appointment calendars, report generation, and an integrated external booking platform tailored for each clinic's specific needs.",
-        "heihgtPX": 200
-    },
-    {
-        "id": 2,
-        "title": "Grocera Store",
-        "tag": "Web Development",
-        "cat": "Web Development",
-        "description": "Grocera, an LA-based online grocery platform, offers a curated selection of high-quality organic products, prioritizing freshness, local partnerships, and customer satisfaction.",
-        "heihgtPX": 200
-    },
-    {
-        "id": 6,
-        "title": "CyberGPT Chat",
-        "tag": "Web Development",
-        "cat": "Web Development",
-        "description": "A web-based application hosting multiple specialized GPT models/agents, each tailored to specific cybersecurity roles, collaborating with each other to provide comprehensive cybersecurity solutions.",
-        "heihgtPX": 200
-    },
-    {
-        "id": 1,
-        "title": "Yerevan Mall Report Builder",
-        "tag": "Web Development",
-        "cat": "Web Development",
-        "description": "Operationalized business intelligence solutions and conducted advanced analytics to identify opportunities and strengths to meet business goals. Created and maintained data visualizations that educated, informed and engaged business partners on key metrics and performance measures.",
-        "height": 1,
-        "heihgtPX": 686
-    },
-    {
-        "id": 5,
-        "title": "Armenian partners",
-        "tag": "Mobile Development",
-        "cat": "Mobile Development",
-        "description": "Armenian partners is a safe business environment for networking, job hunting, crowdfunding and investing. Our goal was to make all investment and fundraising opportunities equally accessible to anyone who aims to have its dime in making Armenia a greater country and fulfill their immense potential"
-    },
-    {
-        "id": 3,
-        "title": "Youmme tech",
-        "tag": "Web Development",
-        "cat": "Web Development",
-        "description": "A technology allows you to obtain initial data on innate character traits, mental and physical characteristics, predispositions, intelligence, communication skills and innate talents only on the basis of a portrait photo and several initial data:",
-        "heihgtPX": 220
-    },
-    {
-        "id": 7,
-        "title": "Loco",
-        "tag": "Web Development",
-        "cat": "Web Development",
-        "description": "The project is a standard restaurant reservation system that includes an interactive map for booking tables, as well as about and contact sections for more information and customer inquiries.",
-        "heihgtPX": 220
-    },
-    {
-        "id": 4,
-        "title": "Games Sakla",
-        "tag": "Web Development",
-        "cat": "Web Development",
-        "description": "The project was designed to help children learn road rules through game.",
-        "heihgtPX": 220
-    }
-]
+{
+    "featured": [
+        {
+            "id": 9,
+            "title": "eLeaP LMS",
+            "company": "Telania",
+            "year": 2025,
+            "role": "Lead Developer",
+            "cat": "Web Development",
+            "tag": "LMS Platform",
+            "tech": ["PHP", "jQuery", "React", "Custom Framework"],
+            "description": "Cloud-based Learning Management System helping businesses deliver, track, and manage employee training. Customizable training, compliance management, and reporting tools.",
+            "liveUrl": "https://eleapsoftware.com",
+            "internal": false,
+            "orientation": "landscape"
+        },
+        {
+            "id": 10,
+            "title": "eLeaP QMS",
+            "company": "Telania",
+            "year": 2025,
+            "role": "Lead Developer",
+            "cat": "Web Development",
+            "tag": "QMS Platform",
+            "tech": ["PHP", "jQuery", "React", "Custom Framework"],
+            "description": "Cloud-based Quality Management System for regulated industries — controlled documents and SOPs, design controls, risk, change, suppliers, and CAPA events. Includes AI-powered health checks that score investigation quality and surface documentation gaps.",
+            "liveUrl": "https://eleapsoftware.com",
+            "internal": false,
+            "orientation": "landscape"
+        },
+        {
+            "id": 8,
+            "title": "Aesthetidocs",
+            "company": "Esterox",
+            "year": 2024,
+            "role": "Senior Full-Stack Developer",
+            "cat": "Web Development",
+            "tag": "Clinic Management",
+            "tech": ["PHP", "Laravel", "Livewire", "React"],
+            "description": "Automated clinic management platform streamlining daily operations: customizable appointment calendars, report generation, and an integrated external booking platform tailored to each clinic.",
+            "liveUrl": null,
+            "internal": true,
+            "orientation": "landscape"
+        },
+        {
+            "id": 2,
+            "title": "Grocera Store",
+            "company": "Grig Family Inc.",
+            "year": 2023,
+            "role": "Full-Stack Developer",
+            "cat": "Web Development",
+            "tag": "E-commerce",
+            "tech": ["PHP", "Yii2", "Laravel", "Vue", "JavaScript"],
+            "description": "LA-based online grocery platform offering a curated selection of organic products, prioritizing freshness, local partnerships, and customer satisfaction.",
+            "liveUrl": null,
+            "internal": true,
+            "orientation": "landscape"
+        },
+        {
+            "id": 6,
+            "title": "CyberGPT",
+            "company": "StellarX",
+            "year": 2024,
+            "role": "Full-Stack Developer",
+            "cat": "Web Development",
+            "tag": "AI / Cybersecurity",
+            "tech": ["Python", "Django"],
+            "description": "Web application hosting multiple specialized GPT agents, each tailored to a specific cybersecurity role, collaborating to provide comprehensive solutions.",
+            "liveUrl": null,
+            "internal": true,
+            "orientation": "landscape"
+        },
+        {
+            "id": 1,
+            "title": "Yerevan Mall BI Dashboard",
+            "company": "Yerevan Mall",
+            "year": 2023,
+            "role": "Lead Developer",
+            "cat": "Web Development",
+            "tag": "Business Intelligence",
+            "tech": ["PHP", "Yii2", "JavaScript", "jQuery"],
+            "description": "Operationalized business intelligence and advanced analytics to identify opportunities to meet business goals. Built and maintained data visualizations engaging business partners on key metrics.",
+            "liveUrl": null,
+            "internal": true,
+            "orientation": "landscape"
+        },
+        {
+            "id": 5,
+            "title": "Armenian Partners",
+            "company": "Davel",
+            "year": 2024,
+            "role": "Team Lead",
+            "cat": "Mobile Development",
+            "tag": "Networking & Investing",
+            "tech": ["PHP", "Yii2", "React Native", "JavaScript"],
+            "description": "Business environment for networking, job hunting, crowdfunding and investing. Built to make investment and fundraising opportunities equally accessible.",
+            "liveUrl": null,
+            "internal": true,
+            "orientation": "portrait"
+        },
+        {
+            "id": 3,
+            "title": "Youmee Tech",
+            "company": "Youmee",
+            "year": 2023,
+            "role": "Full-Stack Developer",
+            "cat": "Web Development",
+            "tag": "AI / Analytics",
+            "tech": ["PHP", "Yii2", "JavaScript", "jQuery"],
+            "description": "Technology that derives initial data on innate character traits, mental and physical characteristics, predispositions, intelligence, and communication skills from a portrait photo and minimal input.",
+            "liveUrl": null,
+            "internal": true,
+            "orientation": "landscape"
+        },
+        {
+            "id": 7,
+            "title": "Loco",
+            "company": "StellarX",
+            "year": 2024,
+            "role": "Full-Stack Developer",
+            "cat": "Web Development",
+            "tag": "Reservations",
+            "tech": ["PHP", "Laravel"],
+            "description": "Restaurant reservation system with an interactive map for booking tables, plus about and contact sections for customer inquiries.",
+            "liveUrl": null,
+            "internal": true,
+            "orientation": "landscape"
+        },
+        {
+            "id": 4,
+            "title": "Sakla Games",
+            "company": "Sakla",
+            "year": 2019,
+            "role": "Full-Stack Developer",
+            "cat": "Web Development",
+            "tag": "Education / Games",
+            "tech": ["PHP", "JavaScript", "jQuery"],
+            "description": "Web-based game designed to help children learn road rules through play.",
+            "liveUrl": null,
+            "internal": true,
+            "orientation": "landscape"
+        }
+    ],
+    "earlierWork": [
+        {
+            "id": "tg-outage",
+            "title": "Utility Outage Notification Bot",
+            "company": "StellarX",
+            "year": 2024,
+            "tech": ["Python", "Telegram Bot API"],
+            "description": "Telegram bot delivering timely updates on water, gas, and electricity outages. Residents subscribe by sharing their address and receive scheduled or unexpected disruption notifications."
+        },
+        {
+            "id": "nork-warehouse",
+            "title": "Warehouse Dashboard",
+            "company": "Nork Marash Medical Center",
+            "year": 2022,
+            "tech": ["PHP", "Yii2", "JavaScript"],
+            "description": "Internal warehouse dashboard for managing medical-supply products."
+        },
+        {
+            "id": "nork-erp",
+            "title": "ERP Optimization",
+            "company": "Nork Marash Medical Center",
+            "year": 2021,
+            "tech": ["PHP", "Yii2", "JavaScript"],
+            "description": "Maximized utilization of an existing ERP by matching user needs to previously unused features of the system."
+        },
+        {
+            "id": "essa-himnark",
+            "title": "ESSA — Employee Self-Service",
+            "company": "Himnark.am",
+            "year": 2018,
+            "tech": ["Node.js", "Angular"],
+            "description": "Employee self-service application for HR workflows."
+        },
+        {
+            "id": "jigsaw-crm",
+            "title": "CRM Platform",
+            "company": "Jigsaw Studio",
+            "year": 2017,
+            "tech": ["PHP", "JavaScript", "jQuery"],
+            "description": "Customer Relationship Management system built during early years as a full-stack developer."
+        }
+    ]
+}

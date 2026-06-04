@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# robond.dev — Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio site for **Robert Aydinyan** — Senior Full-Stack Web & Mobile Developer based in Yerevan, Armenia.
 
-## Available Scripts
+Live: <https://www.robond.dev>
 
-In the project directory, you can run:
+## Stack
 
-### `npm start`
+- React 18 + React Router v6
+- Vite for dev server / bundling
+- AOS (scroll animations), react-lazy-load-image-component
+- EmailJS for the contact form (no backend)
+- Plain CSS with CSS variables for theming
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project layout
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+src/
+├── App.jsx                 # Router + global layout
+├── Components/
+│   ├── HomePage/           # Landing
+│   ├── AboutPage/          # Bio + tech stack
+│   ├── PortfolioPage/      # Project grid + earlier work
+│   ├── ContactPage/        # Form (EmailJS) + contact info
+│   └── layouts/            # Header, Footer, Sidebar, menus
+├── data/
+│   └── projects.json       # Source of truth for portfolio entries
+└── styles/                 # Global CSS + design tokens
+public/
+├── images/projects/0{id}/  # Per-project screenshots
+├── CV.pdf                  # Downloadable CV
+└── Robert Aydinyan.pdf     # Long-form CV
+```
 
-### `npm test`
+## Running locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+npm run dev        # http://localhost:3000
+npm run build      # production build into ./build
+npm run preview    # preview the production build locally
+```
 
-### `npm run build`
+Contact form needs an EmailJS account. Create `.env` from this template:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+VITE_EMAIL_SERVICE_ID=...
+VITE_EMAIL_TEMPLATE_ID=...
+VITE_EMAIL_PUBLIC_KEY=...
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Adding a project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Edit `src/data/projects.json`:
 
-### `npm run eject`
+- **`featured`** — appears in the main grid; requires a screenshot at `public/images/projects/0{id}/01.png`.
+- **`earlierWork`** — text-only entries shown beneath the grid; no screenshot needed.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Each featured entry supports: `title`, `company`, `year`, `role`, `cat`, `tag`, `tech[]`, `description`, `liveUrl` (or `null`), `internal` (boolean), `heightPX`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Deploying
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Static build — deploys to any static host (Hostinger, Netlify, Vercel, S3+CloudFront, etc.):
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm run build
+# upload ./build to host of choice
+```
 
-## Learn More
+## Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Email: <contact@robond.dev>
+- LinkedIn: <https://www.linkedin.com/in/robertaydinyan/>
+- Phone: +374 33 230 250

@@ -6,79 +6,28 @@
     margin-top: 20px;
 }
 
-.education-education .skill-container {
-    display: flex;
-    gap: 30px;
+.stack-groups {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px 40px;
 }
 
-.single-skill-item {
-    width: 50%;
-}
-
-@media screen and (max-width: 992px) {
-    .single-skill-item {
-        width: 100%;
+@media screen and (max-width: 768px) {
+    .stack-groups {
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 }
 
-.single-skill-item .expertise__single:not(:last-child) {
-    margin-bottom: 25px;
+.stack-group__label {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: var(--cm-primary);
+    margin: 0 0 12px;
 }
 
-.single-skill-item .expertise__title {
-    font-weight: 700;
-    font-family: var(--heading);
-    color: var(--heading);
-    text-transform: capitalize;
-    margin-bottom: 15px;
-    font-size: 20px;
-
-}
-
-
-.skill-container{
-    display: flex;
-    gap: 30px;
-}
-
-@media screen and (max-width: 992px) {
-    .skill-container {
-        flex-wrap: wrap;
-    }
-}
-
-
-.single-skill-item .progress {
-    position: relative;
-    border-radius: 0;
-}
-
-.single-skill-item .progress:before {
-    position: absolute;
-    content: "";
-    height: 20px;
-    width: 100%;
-    background: var(--progress);
-}
-
-.single-skill-item .progress .progress-bar {
-    height: 5px;
-    border-radius: 0;
-    background: var(--cm-primary);
-    z-index: 9;
-    position: relative;
-    width: 0;
-    transition: width 1s ease-in-out;
-}
-
-.progress-bar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    color: var(--bs-progress-bar-color);
-    text-align: center;
-    white-space: nowrap;
-    background-color: var(--bs-progress-bar-bg);
-    transition: var(--bs-progress-bar-transition);
+.stack-group .tech-tags {
+    margin-top: 0;
 }

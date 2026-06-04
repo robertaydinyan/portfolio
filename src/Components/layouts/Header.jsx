@@ -33,7 +33,7 @@ export default function Header({showHeader}) {
 
                 <div className="author-hiring">
                     <Link className="btn primary" to="/contact">Hire Me!</Link>
-                    <a className="btn" href="#" onClick={handleDownload}>Download CV</a>
+                    <button type="button" className="btn" onClick={handleDownload}>Download CV</button>
                 </div>
 
                 <div className="author-description">
@@ -44,7 +44,7 @@ export default function Header({showHeader}) {
 
                 <div className="author-social-links">
 
-                    <a href="https://github.com/robertaydinyan" className="social-links" target="_blank">
+                    <a href="https://github.com/robertaydinyan" className="social-links" target="_blank" rel="noopener noreferrer">
                         <LazyLoadImage
                             src="/images/icons/github.svg"
                             alt="github"
@@ -53,7 +53,7 @@ export default function Header({showHeader}) {
                         />
                     </a>
 
-                    <a href="https://www.linkedin.com/in/robertaydinyan/" className="social-links" target="_blank">
+                    <a href="https://www.linkedin.com/in/robertaydinyan/" className="social-links" target="_blank" rel="noopener noreferrer">
                         <LazyLoadImage
                             src="/images/icons/linkedin.svg"
                             alt="linkedin"
